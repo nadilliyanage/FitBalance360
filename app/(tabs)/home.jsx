@@ -21,24 +21,24 @@ const Home = () => {
   };
 
   return (
-    <SafeAreaView className="bg-primary">
+    <SafeAreaView className="bg-primary h-full">
       <FlatList
         data={[{ id: 1 }]}
         keyExtractor={(item) => item.$id}
         renderItem={({ item }) => <Text className="text-3xl">{item.id}</Text>}
         ListHeaderComponent={() => (
           <View className="my-6 px-4 space-y-6">
-            <TouchableOpacity
-              onPress={handleProfileNavigation}
-              className="bg-primary rounded-full p-2 absolute right-4 top-1"
-            >
-              <Image
-                source={icons.profile}
-                resizeMode="contain"
-                style={{ width: 24, height: 24, tintColor: "#FFA001" }}
-              />
-            </TouchableOpacity>
             <View className="justify-between items-start flex-row mb-6">
+              <TouchableOpacity
+                onPress={handleProfileNavigation}
+                className="bg-primary rounded-full p-2 absolute right-4 "
+              >
+                <Image
+                  source={icons.profile}
+                  resizeMode="contain"
+                  style={{ width: 24, height: 24, tintColor: "green" }}
+                />
+              </TouchableOpacity>
               <View>
                 <Text className="font-pmedium text-sm text-gray-100">
                   Welcome Back
