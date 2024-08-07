@@ -36,7 +36,7 @@ const Home = () => {
                 <Image
                   source={icons.profile}
                   resizeMode="contain"
-                  style={{ width: 24, height: 24, tintColor: "#FFA001" }}
+                  style={{ width: 24, height: 24, tintColor: "green" }}
                 />
               </TouchableOpacity>
               <View>
